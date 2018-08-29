@@ -1,14 +1,28 @@
 app:
     resource: '@AppBundle/Controller/'
     type: annotation
-blog_list:
-    path:     /blog
-    defaults: { _controller: AppBundle:Blog:list}
-
-blog_show:
-    path:     /blog/{slug}
-    defaults: { _controller: AppBundle:Blog:show }
-
-blog_first:
-    path:     /blog/first/{slug}
-    defaults: { _controller: AppBundle:Blog:first }
+    prefix: /api/v1
+#blog_list:
+#    path:     /blog
+#    defaults: { _controller: AppBundle:Blog:list}
+#    methods:  [GET]
+#blog_show:
+#    path:     /blog/{slug}
+#    defaults: { _controller: AppBundle:Blog:show }
+#    methods:  [GET]
+#blog_first:
+#    path:     /blog/first/{slug}
+#    defaults: { _controller: AppBundle:Blog:first }
+#    methods:  [GET]
+#blog_create_new:
+#    path:     /blog/new
+#    defaults: { _controller: AppBundle:Blog:first }
+#    methods:  [POST]
+#blog_edit:
+#    path:     /blog/edit/{slug}
+#    defaults: { _controller: AppBundle:Blog:first }
+#    methods:  [PUT]
+#blog_delete:
+#    path:     /blog/delete/{slug}
+#    defaults: { _controller: AppBundle:Blog:first }
+#    methods:  [DELETE]
