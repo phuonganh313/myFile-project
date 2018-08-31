@@ -26,3 +26,7 @@ app:
 #    path:     /blog/delete/{slug}
 #    defaults: { _controller: AppBundle:Blog:first }
 #    methods:  [DELETE]
+form_simple:
+    path:     /form
+    defaults: { _controller: AppBundle:Default:show}
+    methods:  [GET]

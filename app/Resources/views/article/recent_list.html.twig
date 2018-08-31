@@ -1,0 +1,8 @@
+{% for article in articles %}
+    <a href="{{ path('article_show', {'slug': article.slug}) }}">
+        {{ article.title }}
+    </a>
+{% endfor %}
+
+<img src="{{ asset('images/logo.png') }}" alt="Symfony!" />
+<link href="{{ asset('css/blog.css') }}" rel="stylesheet" />
